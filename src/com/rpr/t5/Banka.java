@@ -20,4 +20,25 @@ public class Banka {
     public List<Korisnik> getKorisnici() {
         return korisnici;
     }
+
+    public Racun kreirajRacun (Korisnik korisnik){
+        brojRacuna++;
+        Racun racun = new Racun(brojRacuna, korisnik);
+        korisnik.dodajRacun(racun);
+        return racun;
+    }
+
+    public Korisnik kreirajNovogKorisnika(String ime, String prezime){
+        Korisnik korisnik = new Korisnik(ime, prezime);
+        korisnici.add(korisnik);
+        return korisnik;
+    }
+
+    public Uposlenik dodajNovogUposlenog(String ime, String prezime){
+        Uposlenik uposlenik = new Uposlenik(ime, prezime);
+        uposleni.add(uposlenik);
+        return uposlenik;
+    }
+
+
 }
