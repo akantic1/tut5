@@ -7,6 +7,15 @@ public class Korisnik extends Osoba {
         super(ime, prezime);
     }
 
+    public boolean dodajRacun(Racun racun){
+        if(this.racun == null){
+            this.racun = racun;
+            return true;
+        }
+        else
+            return false;
+    }
+
     public Racun getRacun() {
         return racun;
     }
