@@ -1,9 +1,12 @@
 package com.rpr.t5;
 
+import com.rpr.t5.util.Kredit;
+import com.rpr.t5.util.KreditnaSposobnost;
+
 public class Main {
 
     public static void main(String[] args) {
-/*
+
         Banka banka = new Banka();
         Korisnik k1 = banka.kreirajNovogKorisnika("Maja", "Majić");
         banka.kreirajRacun(k1);
@@ -32,6 +35,6 @@ public class Main {
 
         Kredit.ispisiSveKorisnikeBezPrekoracenja(banka.getKorisnici());
 
- */
+
     }
 }
